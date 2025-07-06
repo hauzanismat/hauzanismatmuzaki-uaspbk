@@ -1,0 +1,36 @@
+{
+  "menu": [
+    { "id": "1", "nama": "Espresso", "harga": 20000 },
+    { "id": "2", "nama": "Latte", "harga": 25000 },
+    { "id": "3", "nama": "Cappuccino", "harga": 24000 },
+    { "id": "4", "nama": "Americano", "harga": 23000 },
+    { "id": "5", "nama": "Mochaccino", "harga": 26000 },
+    { "id": "6", "nama": "Jus Alpukat", "harga": 12000 },
+    { "id": "7", "nama": "Jus Mangga", "harga": 10000 },
+    { "id": "8", "nama": "Jus Jeruk", "harga": 9000 },
+    { "id": "9", "nama": "Jus Semangka", "harga": 8500 },
+    { "id": "10", "nama": "Jus Naga", "harga": 11000 },
+    { "id": "11", "nama": "Jus Stroberi", "harga": 13000 },
+    { "id": "12", "nama": "Jus Melon", "harga": 9500 }
+  ],
+  "transaksi": [
+    {
+      "id": "1751750689523",
+      "tanggal": "2025-07-05T21:24:49.523Z",
+      "pesanan": [
+        {
+          "id_menu": "1",
+          "nama_menu": "Espresso",
+          "harga": 20000,
+          "jumlah": 1
+        },
+        {
+          "id_menu": "4",
+          "nama_menu": "Americano",
+          "harga": 23000,
+          "jumlah": 1
+        }
+      ]
+    }
+  ]
+}
