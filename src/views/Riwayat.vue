@@ -10,7 +10,7 @@
     <!-- List Riwayat -->
     <div v-else class="space-y-6">
       <div
-        v-for="trx in riwayat"
+        v-for="trx in riwayat.reverse()"
         :key="trx.id"
         class="bg-white rounded shadow p-4"
       >
@@ -43,11 +43,11 @@
 </template>
 
 <script setup>
-import { onMounted } from 'vue'
+import { onMounted, computed } from 'vue'
 import { useTransaksiStore } from '@/stores/transaksiStore'
 
 const transaksiStore = useTransaksiStore()
-const riwayat = transaksiStore.riwayat
+const riwayat = computed(() => transaksiStore.riwayat)
 
 onMounted(() => {
   transaksiStore.fetchRiwayat()

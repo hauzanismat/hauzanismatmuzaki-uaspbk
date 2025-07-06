@@ -48,6 +48,9 @@
 <script setup>
 import { computed } from 'vue'
 import { useTransaksiStore } from '@/stores/transaksiStore'
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
 
 const transaksiStore = useTransaksiStore()
 
@@ -61,5 +64,6 @@ const hapusItem = (id_menu) => {
 const checkout = async () => {
   await transaksiStore.checkout()
   alert('Checkout berhasil!')
+  router.push('/')
 }
 </script>

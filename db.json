@@ -1,17 +1,65 @@
 {
   "menu": [
-    { "id": "1", "nama": "Espresso", "harga": 20000 },
-    { "id": "2", "nama": "Latte", "harga": 25000 },
-    { "id": "3", "nama": "Cappuccino", "harga": 24000 },
-    { "id": "4", "nama": "Americano", "harga": 23000 },
-    { "id": "5", "nama": "Mochaccino", "harga": 26000 },
-    { "id": "6", "nama": "Jus Alpukat", "harga": 12000 },
-    { "id": "7", "nama": "Jus Mangga", "harga": 10000 },
-    { "id": "8", "nama": "Jus Jeruk", "harga": 9000 },
-    { "id": "9", "nama": "Jus Semangka", "harga": 8500 },
-    { "id": "10", "nama": "Jus Naga", "harga": 11000 },
-    { "id": "11", "nama": "Jus Stroberi", "harga": 13000 },
-    { "id": "12", "nama": "Jus Melon", "harga": 9500 }
+    {
+      "id": "1",
+      "nama": "Espresso",
+      "harga": 20000
+    },
+    {
+      "id": "2",
+      "nama": "Latte",
+      "harga": 25000
+    },
+    {
+      "id": "3",
+      "nama": "Cappuccino",
+      "harga": 24000
+    },
+    {
+      "id": "4",
+      "nama": "Americano",
+      "harga": 23000
+    },
+    {
+      "id": "5",
+      "nama": "Mochaccino",
+      "harga": 26000
+    },
+    {
+      "id": "6",
+      "nama": "Jus Alpukat",
+      "harga": 12000
+    },
+    {
+      "id": "7",
+      "nama": "Jus Mangga",
+      "harga": 10000
+    },
+    {
+      "id": "8",
+      "nama": "Jus Jeruk",
+      "harga": 9000
+    },
+    {
+      "id": "9",
+      "nama": "Jus Semangka",
+      "harga": 8500
+    },
+    {
+      "id": "10",
+      "nama": "Jus Naga",
+      "harga": 11000
+    },
+    {
+      "id": "11",
+      "nama": "Jus Stroberi",
+      "harga": 13000
+    },
+    {
+      "id": "12",
+      "nama": "Jus Melon",
+      "harga": 9500
+    }
   ],
   "transaksi": [
     {
@@ -28,6 +76,126 @@
           "id_menu": "4",
           "nama_menu": "Americano",
           "harga": 23000,
+          "jumlah": 1
+        }
+      ]
+    },
+    {
+      "id": "1751768412595",
+      "tanggal": "2025-07-06T02:20:12.595Z",
+      "pesanan": [
+        {
+          "id_menu": "10",
+          "nama_menu": "Jus Naga",
+          "harga": 11000,
+          "jumlah": 1
+        },
+        {
+          "id_menu": "2",
+          "nama_menu": "Latte",
+          "harga": 25000,
+          "jumlah": 1
+        },
+        {
+          "id_menu": "3",
+          "nama_menu": "Cappuccino",
+          "harga": 24000,
+          "jumlah": 1
+        },
+        {
+          "id_menu": "4",
+          "nama_menu": "Americano",
+          "harga": 23000,
+          "jumlah": 1
+        },
+        {
+          "id_menu": "7",
+          "nama_menu": "Jus Mangga",
+          "harga": 10000,
+          "jumlah": 2
+        },
+        {
+          "id_menu": "1",
+          "nama_menu": "Espresso",
+          "harga": 20000,
+          "jumlah": 1
+        }
+      ]
+    },
+    {
+      "id": "1751768436891",
+      "tanggal": "2025-07-06T02:20:36.891Z",
+      "pesanan": [
+        {
+          "id_menu": "1",
+          "nama_menu": "Espresso",
+          "harga": 20000,
+          "jumlah": 1
+        },
+        {
+          "id_menu": "2",
+          "nama_menu": "Latte",
+          "harga": 25000,
+          "jumlah": 1
+        },
+        {
+          "id_menu": "3",
+          "nama_menu": "Cappuccino",
+          "harga": 24000,
+          "jumlah": 1
+        },
+        {
+          "id_menu": "4",
+          "nama_menu": "Americano",
+          "harga": 23000,
+          "jumlah": 1
+        }
+      ]
+    },
+    {
+      "id": "1751768496203",
+      "tanggal": "2025-07-06T02:21:36.203Z",
+      "pesanan": [
+        {
+          "id_menu": "1",
+          "nama_menu": "Espresso",
+          "harga": 20000,
+          "jumlah": 1
+        },
+        {
+          "id_menu": "2",
+          "nama_menu": "Latte",
+          "harga": 25000,
+          "jumlah": 1
+        }
+      ]
+    },
+    {
+      "id": "1751768586506",
+      "tanggal": "2025-07-06T02:23:06.506Z",
+      "pesanan": [
+        {
+          "id_menu": "1",
+          "nama_menu": "Espresso",
+          "harga": 20000,
+          "jumlah": 1
+        }
+      ]
+    },
+    {
+      "id": "1751768707276",
+      "tanggal": "2025-07-06T02:25:07.276Z",
+      "pesanan": [
+        {
+          "id_menu": "1",
+          "nama_menu": "Espresso",
+          "harga": 20000,
+          "jumlah": 1
+        },
+        {
+          "id_menu": "3",
+          "nama_menu": "Cappuccino",
+          "harga": 24000,
           "jumlah": 1
         }
       ]
