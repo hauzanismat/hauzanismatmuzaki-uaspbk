@@ -17,7 +17,6 @@ export const useTransaksiStore = defineStore('transaksi', {
   },
 
   actions: {
-    // Tambah item ke keranjang
     tambahKeKeranjang(menu) {
       const existing = this.keranjang.find(item => item.id_menu === menu.id)
       if (existing) {
@@ -32,17 +31,14 @@ export const useTransaksiStore = defineStore('transaksi', {
       }
     },
 
-    // Hapus item dari keranjang
     hapusDariKeranjang(id_menu) {
       this.keranjang = this.keranjang.filter(item => item.id_menu !== id_menu)
     },
 
-    // Kosongkan keranjang
     kosongkanKeranjang() {
       this.keranjang = []
     },
 
-    // Checkout dan simpan ke JSON Server
     async checkout() {
       const transaksiBaru = {
         id: Date.now().toString(),
@@ -63,7 +59,6 @@ export const useTransaksiStore = defineStore('transaksi', {
       }
     },
 
-    // Ambil riwayat transaksi
     async fetchRiwayat() {
       try {
         const res = await axios.get('http://localhost:3000/transaksi')
@@ -73,7 +68,6 @@ export const useTransaksiStore = defineStore('transaksi', {
       }
     },
 
-    // Hitung total dari semua transaksi
     async fetchLaporanTotal() {
       try {
         const res = await axios.get('http://localhost:3000/transaksi')
