@@ -9,11 +9,7 @@
 
     <!-- List Riwayat -->
     <div v-else class="space-y-6">
-      <div
-        v-for="trx in riwayat.reverse()"
-        :key="trx.id"
-        class="bg-white rounded shadow p-4"
-      >
+      <div v-for="trx in riwayat" :key="trx.id" class="bg-white rounded shadow p-4">
         <div class="flex justify-between items-center mb-2">
           <div>
             <p class="text-sm text-gray-500">
@@ -28,11 +24,7 @@
 
         <!-- Daftar Pesanan -->
         <ul class="mt-2 space-y-1">
-          <li
-            v-for="item in trx.pesanan"
-            :key="item.id_menu"
-            class="text-sm text-gray-700 flex justify-between"
-          >
+          <li v-for="item in trx.pesanan" :key="item.id_menu" class="text-sm text-gray-700 flex justify-between">
             <span>{{ item.nama_menu }} x{{ item.jumlah }}</span>
             <span>Rp {{ (item.harga * item.jumlah).toLocaleString() }}</span>
           </li>
@@ -47,21 +39,18 @@ import { onMounted, computed } from 'vue'
 import { useTransaksiStore } from '@/stores/transaksiStore.js'
 
 const transaksiStore = useTransaksiStore()
-const riwayat = computed(() => transaksiStore.riwayat)
 
-onMounted(() => {
-  transaksiStore.fetchRiwayat()
+onMounted(async () => {
+  await transaksiStore.fetchRiwayat()
 })
 
-// Hitung total dari setiap transaksi
+// Buat computed yang tidak memodifikasi state asli
+const riwayat = computed(() => transaksiStore.riwayat.reverse())
+
 const hitungTotal = (pesanan) => {
-  return pesanan.reduce(
-    (sum, item) => sum + item.harga * item.jumlah,
-    0
-  )
+  return pesanan.reduce((sum, item) => sum + item.harga * item.jumlah, 0)
 }
 
-// Format tanggal
 const formatTanggal = (isoString) => {
   const date = new Date(isoString)
   return date.toLocaleString('id-ID', {

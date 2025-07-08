@@ -48,12 +48,11 @@
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
-import { createRouter, RouterLink } from 'vue-router'
 import { useMenuStore } from '@/stores/menuStore.js'
 import { useTransaksiStore } from '@/stores/transaksiStore.js'
 import { useRouter } from 'vue-router'
 
-const router = createRouter()
+const router = useRouter()
 
 const menuStore = useMenuStore()
 const transaksiStore = useTransaksiStore()
