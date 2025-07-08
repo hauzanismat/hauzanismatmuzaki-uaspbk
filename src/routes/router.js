@@ -7,7 +7,7 @@ import Keranjang from "@/views/Keranjang.vue";
 const routes = [
     {path: '/', name: 'transaksi', component: Transaksi},
     {path: '/laporan', name:'laporan', component: Laporan},
-    {path: '/riwayat', name:'profile', component: Riwayat},
+    {path: '/riwayat', name:'riwayat', component: Riwayat},
     {path: '/keranjang', name:'keranjang', component: Keranjang}
 ]
 
