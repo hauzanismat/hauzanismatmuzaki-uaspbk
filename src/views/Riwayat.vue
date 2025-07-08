@@ -44,7 +44,7 @@
 
 <script setup>
 import { onMounted, computed } from 'vue'
-import { useTransaksiStore } from '@/stores/transaksiStore'
+import { useTransaksiStore } from '@/stores/transaksiStore.js'
 
 const transaksiStore = useTransaksiStore()
 const riwayat = computed(() => transaksiStore.riwayat)

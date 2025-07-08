@@ -5,7 +5,7 @@
       <h1 class="text-2xl font-bold">Transaksi</h1>
 
       <!-- Indikator Keranjang -->
-      <RouterLink to="/keranjang" class="relative inline-block">
+      <button @click="router.push('/keranjang')" class="relative inline-block">
         <span class="bg-purple-600 text-white px-3 py-1 rounded-full">
           🛒 Keranjang
           <span
@@ -15,7 +15,7 @@
             {{ totalItem }}
           </span>
         </span>
-      </RouterLink>
+      </button>
     </div>
 
     <!-- Search -->
@@ -48,9 +48,12 @@
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
-import { RouterLink } from 'vue-router'
-import { useMenuStore } from '@/stores/menuStore'
-import { useTransaksiStore } from '@/stores/transaksiStore'
+import { createRouter, RouterLink } from 'vue-router'
+import { useMenuStore } from '@/stores/menuStore.js'
+import { useTransaksiStore } from '@/stores/transaksiStore.js'
+import { useRouter } from 'vue-router'
+
+const router = createRouter()
 
 const menuStore = useMenuStore()
 const transaksiStore = useTransaksiStore()
